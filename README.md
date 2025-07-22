@@ -61,7 +61,7 @@ weather-app/
 │       ├── reducers/     # Redux reducers
 │       │   ├── weatherReducers.ts  # Reducer types
 │       ├── types/        # TypeScript type definitions
-│       │    ├── weatherTypes.ts  # Type definitions for weather data
+│       │   ├── weatherTypes.ts  # Type definitions for weather data
 │       └── index.ts  # Redux store configuration
 ├── .env                  # Environment variables configuration file
 └── package.json          # Project dependencies
