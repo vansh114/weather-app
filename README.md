@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# Weather Forecast App
+## Project Overview
+A modern, responsive weather forecast application built with React Native and Expo. This app allows users to search for weather information by city name and displays current temperature, weather conditions, and city details. The app demonstrates the implementation of Redux with Redux Thunk for asynchronous API integration.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Features
+- Search weather by city name
+- Display current temperature in Celsius
+- Show weather conditions
+- Clean and intuitive user interface
+- Loading indicators and error handling
+- Redux state management with Thunk middleware for API calls
 
-## Get started
+## Technology Stack
+- Frontend Framework : React Native (with Expo)
+- State Management : Redux, Redux Thunk
+- API Integration : Axios
+- Language : TypeScript
+- UI Components : React Native core components
+- Navigation : Expo Router
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## Installation
+1. Clone the repository
+```
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+```
+2. Install dependencies
+```
+npm install
+```
+3. Start the development server
+```
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
+After starting the app, you can:
 
-## Learn more
+1. Enter a city name in the search field
+2. Tap the "Get Weather" button
+3. View the current weather information for the specified city
 
-To learn more about developing your project with Expo, look at the following resources:
+The app will display:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- City name
+- Current temperature in Celsius
+- Weather condition description
 
-## Join the community
+If there's an error (like an invalid city name), an appropriate error message will be displayed.
 
-Join our community of developers creating universal apps.
+## Project Structure
+```
+weather-app/
+├── app/                  # Main application code
+│   ├── index.tsx         # Entry point with Redux Provider
+│   └── WeatherScreen.tsx # Main weather display screen
+├── src/
+│   └── store/            # Redux store configuration
+│       ├── actions/      # Redux actions
+│       ├── reducers/     # Redux reducers
+│       └── types/        # TypeScript type definitions
+└── package.json          # Project dependencies
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## API Integration
+This app uses the OpenWeatherMap API to fetch weather data. The API integration is handled through Redux Thunk middleware, allowing for asynchronous API calls with proper loading states and error handling.
+
+## Requirements
+- Node.js 14.0 or later
+- Expo CLI
+- An internet connection for API calls
+- iOS/Android device or emulator for testing
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch ( git checkout -b feature/amazing-feature )
+3. Commit your changes ( git commit -m 'Add some amazing feature' )
+4. Push to the branch ( git push origin feature/amazing-feature )
+5. Open a Pull Request
+
+## License
+This project is open source and available under the MIT License.
+
+## Acknowledgements
+- OpenWeatherMap API for providing weather data
+- Expo for the development framework
+- Redux and Redux Thunk for state management
