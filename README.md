@@ -1,4 +1,4 @@
-# Weather Forecast App
+# Weather App
 ## Project Overview
 A modern, responsive weather forecast application built with React Native and Expo. This app allows users to search for weather information by city name and displays current temperature, weather conditions, and city details. The app demonstrates the implementation of Redux with Redux Thunk for asynchronous API integration.
 
@@ -30,7 +30,7 @@ npm install
 ```
 3. Start the development server
 ```
-npx expo start
+$env:API_KEY="your_api_key_here"; npx expo start
 ```
 
 ## Usage
@@ -70,14 +70,15 @@ This app uses the OpenWeatherMap API to fetch weather data. The API integration 
 - Expo CLI
 - An internet connection for API calls
 - iOS/Android device or emulator for testing
+- OpenWeatherMap API key
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create your feature branch ( git checkout -b feature/amazing-feature )
-3. Commit your changes ( git commit -m 'Add some amazing feature' )
-4. Push to the branch ( git push origin feature/amazing-feature )
+2. Create your feature branch ( `git checkout -b feature/amazing-feature` )
+3. Commit your changes ( `git commit -m 'Add some amazing feature'` )
+4. Push to the branch ( `git push origin feature/amazing-feature` )
 5. Open a Pull Request
 
 ## License
@@ -87,3 +88,6 @@ This project is open source and available under the MIT License.
 - OpenWeatherMap API for providing weather data
 - Expo for the development framework
 - Redux and Redux Thunk for state management
+
+## Note
+Make sure to keep your API key private and never commit it to version control. The .env file is included in .gitignore for this purpose.
